@@ -3,8 +3,120 @@
 <head>
     <meta charset="UTF-8">
     <title>个人主页</title>
+    <link rel="icon" href="./image/icon.jpg">
+    <link rel="stylesheet" href="./css/iconfont.css">
+    <link rel="stylesheet" href="./css/index.css">
+    <script src="./js/jquery.js"></script>
 </head>
 <body>
-    <h1>个人主页</h1>
+<nav class="flex">
+    <ul class="navLeft ">
+        <li class="bgMusic bgAnimation">
+            <audio autoplay src="./bgMusic/LaputaCastleInTheSky.mp3"></audio>
+        </li>
+        <li class="bgContent ">
+            <span>PengFei</span>
+            <span class="change">Resume</span>
+            <hr>
+            <span>个人简历</span>
+            <span class="change">前端工程师</span>
+        </li>
+    </ul>
+    <ul class="navRight flex">
+        <li><a href="#page1">首页</a></li>
+        <li><a href="#page2">关于我</a></li>
+        <li><a href="#page3">专业技能</a></li>
+        <li><a href="#page4">我的作品</a></li>
+        <li><a href="#page5">联系我</a></li>
+    </ul>
+</nav>
+<main>
+    <section id="page1">
+        <div>
+            <h1>请相信，每个人都身怀绝技</h1>
+            <p>唯有努力</p>
+            <p>方得始终</p>
+            <p>路漫漫其修远兮 吾将上下而求索</p>
+        </div>
+    </section>
+    <section id="page2" >
+        <div class="flex">
+            <ul class="introduce">
+                <li><span>简单的介绍</span></li>
+                <li><span>优势和不足</span></li>
+                <li><span>我的想法是</span></li>
+            </ul>
+            <ul class="rigthContent">
+                <li>
+                    <p>你好，我是叶鹏飞</p>
+                    <p>来自河南南阳的一个小山庄</p>
+                    <p>爱好广泛,喜欢听音乐和游戏</p>
+                    <p>莫听穿林打叶声，何妨吟啸且徐行。</p>
+                    <p>竹杖芒鞋轻胜马，谁怕？一蓑烟雨任平生。</p>
+                </li>
+                <li class="change">
+                    <p>就想老老实实躺会</p>
+                    <p>我的优势是：主动加班</p>
+                    <p>在赶项目等阶段还是老实本分的敲</p>
+                    <p>如果你不介意</p>
+                    <p>那就选我吧！</p>
+                </li>
+                <li class="change">
+                    <p>有人说 ฅ^•ﻌ•^ฅ</p>
+                    <p>IT是个青春饭</p>
+                    <p>但我 (ฅ´ω`ฅ)</p>
+                    <p>要到敲不动为止</p>
+                    <p>当然，得先有一个你@我offer！</p>
+                </li>
+            </ul>
+        </div>
+
+    </section>
+    <section id="page3">
+        <p>专业技能</p>
+        <ul class="flex">
+            <li>
+                <P class="mainM">HTML</P>
+                <P class="change show">熟练掌握运用HTML5</P>
+                <P class="change show">熟悉HTML盒模型和各类布局方式</P>
+                <P class="change show">熟悉PC端，移动端，响应式网页开发</P>
+
+            </li>
+            <li>
+                <P  class="mainM">CSS</P>
+                <P class="change show">熟练运用css</P>
+                <P class="change show">熟悉css3新特性</P>
+                <P class="change show">使用BootStrap，MUI等</P>
+
+            </li>
+            <li>
+                <P  class="mainM">JavaScript</P>
+                <P class="change show">熟练JavaScript</P>
+                <P class="change show">熟练jQuery</P>
+                <P class="change show">熟练ajax</P>
+            </li>
+            <li>
+                <P  class="mainM">Vue</P>
+                <P class="change show">熟练掌握Vue</P>
+                <P class="change show">有丰富的vue开发经验</P>
+                <P class="change show">熟练运用Vuex,Element-Ui</P>
+            </li>
+            <li>
+                <P  class="mainM">React</P>
+                <P class="change show">熟练掌握React</P>
+                <P class="change show">有丰富的React开发经验</P>
+                <P class="change show">熟练运用Redux,antD</P>
+            </li>
+        </ul>
+    </section>
+    <section id="page4">
+
+    </section>
+    <section id="page5">
+
+    </section>
+</main>
+
+<script src="./js/index.js"></script>
 </body>
 </html>

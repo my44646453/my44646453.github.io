@@ -1,0 +1,213 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html,body{
+    height: 100%;
+}
+a{
+    text-decoration: none;
+    color:black;
+}
+p,li{
+    font-size: 10px;
+}
+li {
+    list-style: none;
+}
+.change{
+    display: none;
+    color: transparent;
+}
+.flex{
+    display: flex;
+    justify-content: space-around;
+}
+nav{
+    width: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    background: transparent;
+    padding: 5px 15%;
+    border-bottom: 1px solid gray;
+    background: #BCD0CE;
+    z-index: 999;
+}
+nav .navLeft{
+    display: flex;
+    flex: 1;
+}
+nav .navLeft .bgMusic{
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    background: url("../image/LaputaCastleInTheSky.jpg") 0 0 /100% 100%  no-repeat;
+    border: 1px solid gray;
+    margin-right: 5px;
+}
+nav .navLeft .bgAnimation{
+    animation: musicBg 15s linear infinite;
+}
+@keyframes musicBg {
+    to{
+        transform: rotate(0);
+    }
+    from{
+        transform: rotate(-360deg);
+    }
+}
+nav .navLeft .bgContent{
+    font-size: 8px;
+    font-weight: bold;
+    text-align: center;
+}
+nav .navLeft .bgContent:hover{
+    cursor: pointer;
+}
+nav .navLeft .bgContent hr{
+    border-color: orange;
+}
+nav .navLeft .bgContent span{
+    line-height: 15px;
+}
+nav .navRight{
+    float: right;
+    white-space: nowrap;
+}
+nav .navRight li{
+    flex: 1;
+    margin-left: 20px;
+    font-size: 10px;
+    line-height: 30px;
+}
+nav .navRight li:hover a{
+    color: red;
+}
+main section{
+    width: 100%;
+    height: 100vh;
+}
+main #page1{
+    background: url("../image/one.jpg") 0 /100% 100% no-repeat;
+    position: relative;
+}
+
+main #page1>div{
+    position: absolute;
+    width: 100%;
+    height: 100px;
+    top: calc(50% - 50px);
+    text-align: center;
+}
+main #page1>div h1{
+    width: 80%;
+    margin: 10px auto;
+    animation:hh 2s linear both ;
+}
+@keyframes hh {
+    30%{
+        transform: scale(.5);
+    }
+    60%{
+        transform: scale(1.2);
+    }
+    100%{
+        transform: scale(1);
+    }
+}
+main #page1>div p{
+    line-height: 16px;
+}
+main #page2{
+    background: url('../image/two.jpg') 0 /100% 100% no-repeat;
+    position: relative;
+}
+main #page2>div{
+    position: absolute;
+    width: 100%;
+    height: 200px;
+    top: calc(50% - 100px);
+}
+main #page2>div .introduce{
+    flex: 1;
+    padding-top: 25px;
+}
+main #page2>div .introduce li{
+    line-height: 50px;
+    width: 100px;
+    margin: 0 auto;
+    text-align: center;
+    transition: .5s;
+}
+main #page2>div .introduce li:hover span{
+    padding:5px 25px;
+    box-shadow: 0 0 2px  black;
+    border-radius: 15px;
+    cursor: pointer;
+}
+main #page2>div  .rigthContent{
+    flex: 1;
+    text-align: center;
+}
+main #page2>div  .rigthContent li{
+    width: 300px;
+    height: 200px;
+    box-shadow: 0 0 1px  1px  gray;
+    padding-top: 10px;
+}
+main #page2>div  .rigthContent li p{
+    line-height: 35px;
+}
+main #page3{
+    background: url('../image/three.jpg') 0 /100% 100% no-repeat;
+    position: relative;
+    padding-top: 40px;
+}
+main #page3>p{
+    line-height: 40px;
+    text-align: center;
+}
+main #page3>ul{
+     position: absolute;
+     width: 100%;
+     height: 200px;
+     top: calc(50% - 60px);
+
+ }
+main #page3>ul li{
+    width: 15%;
+    border:solid 1px white;
+  border-radius: 15px;
+
+}
+main #page3>ul p.mainM{
+    font-size: 30px;
+    color: white;
+    text-align: center;
+    line-height: 200px;
+    transition: .5s;
+}
+main #page3>ul p.show{
+    color: white;
+    padding: 0 10px 0 20px;
+    line-height: 22px;
+
+}
+
+main #page3>ul p.show:before{
+    content: '';
+    display: inline-block;
+    width: 5px;
+    height: 5px;
+    border-radius: 50%;
+    background: white;
+    transform: translateX(-5px);
+}
+main #page4{
+        background: url('../image/four.jpg') 0 /100% 100% no-repeat;
+}
+main #page5{
+    background: url('../image/five.jpg') 0 /100% 100% no-repeat;
+}
