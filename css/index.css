@@ -11,7 +11,7 @@ a{
     color:black;
 }
 p,li{
-    font-size: 14px;
+    font-size: 16px;
 }
 li {
     list-style: none;
@@ -70,7 +70,7 @@ nav .navLeft .bgContent hr{
     border-color: orange;
 }
 nav .navLeft .bgContent span{
-    line-height: 15px;
+    line-height: 20px;
 }
 nav .navRight{
     float: right;
@@ -80,7 +80,7 @@ nav .navRight li{
     flex: 1;
     margin-left: 20px;
     font-size: 18px;
-    line-height: 30px;
+    line-height: 40px;
 }
 nav .navRight li:hover a{
     color: red;
@@ -118,7 +118,7 @@ main #page1>div h1{
     }
 }
 main #page1>div p{
-    line-height: 16px;
+    line-height: 22px;
 }
 main #page2{
     background: url('../image/two.jpg') 0 /100% 100% no-repeat;
