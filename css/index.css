@@ -59,7 +59,7 @@ nav .navLeft .bgAnimation{
     }
 }
 nav .navLeft .bgContent{
-    font-size: 8px;
+    font-size: 12px;
     font-weight: bold;
     text-align: center;
 }
@@ -79,7 +79,7 @@ nav .navRight{
 nav .navRight li{
     flex: 1;
     margin-left: 20px;
-    font-size: 10px;
+    font-size: 18px;
     line-height: 30px;
 }
 nav .navRight li:hover a{
