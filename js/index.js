@@ -13,6 +13,7 @@ bgMusic.click(function () {
 })
 $lis.click(function(){
     let index = $(this).index();
+    $(this).children().addClass('bottomLine').parent().siblings().children().removeClass('bottomLine');
     for(let i = 0; i < $contents.length; i++){
         $contents[i].className = 'change';
     }
@@ -20,6 +21,5 @@ $lis.click(function(){
 })
 let  $skills = $('#page3 .flex li');
 $skills.mouseover(function(){
-    $(this).children('p.mainM').css('lineHeight','60px').siblings().removeClass('change')
-
+    $(this).children('p.mainM').css('lineHeight','120px').siblings().removeClass('change')
 })

@@ -3,200 +3,273 @@
     padding: 0;
     box-sizing: border-box;
 }
-html,body{
+
+html, body {
     height: 100%;
 }
-a{
+
+a {
     text-decoration: none;
-    color:black;
+    color: black;
 }
-p,li{
-    font-size: 16px;
-}
+
 li {
     list-style: none;
 }
-.change{
+
+.change {
     display: none;
     color: transparent;
 }
-.flex{
+
+.flex {
     display: flex;
     justify-content: space-around;
 }
-nav{
+
+nav {
     width: 100%;
     position: fixed;
     top: 0;
     left: 0;
     background: transparent;
-    padding: 5px 15%;
+    padding: 10px 15%;
     border-bottom: 1px solid gray;
+
     background: #BCD0CE;
     z-index: 999;
 }
-nav .navLeft{
+
+nav .navLeft {
     display: flex;
     flex: 1;
+
 }
-nav .navLeft .bgMusic{
-    width: 30px;
-    height: 30px;
+
+nav .navLeft .bgMusic {
+    width: 40px;
+    height: 40px;
     border-radius: 50%;
-    background: url("../image/LaputaCastleInTheSky.jpg") 0 0 /100% 100%  no-repeat;
+    background: url("../image/LaputaCastleInTheSky.jpg") 0 0 /100% 100% no-repeat;
     border: 1px solid gray;
     margin-right: 5px;
 }
-nav .navLeft .bgAnimation{
+
+nav .navLeft .bgAnimation {
     animation: musicBg 15s linear infinite;
 }
+
 @keyframes musicBg {
-    to{
+    to {
         transform: rotate(0);
     }
-    from{
+    from {
         transform: rotate(-360deg);
     }
 }
-nav .navLeft .bgContent{
+
+nav .navLeft .bgContent {
     font-size: 12px;
     font-weight: bold;
     text-align: center;
 }
-nav .navLeft .bgContent:hover{
+
+nav .navLeft .bgContent:hover {
     cursor: pointer;
 }
-nav .navLeft .bgContent hr{
+
+nav .navLeft .bgContent hr {
     border-color: orange;
 }
-nav .navLeft .bgContent span{
+
+nav .navLeft .bgContent span {
     line-height: 20px;
 }
-nav .navRight{
+
+nav .navRight {
     float: right;
     white-space: nowrap;
 }
-nav .navRight li{
+
+nav .navRight li {
     flex: 1;
     margin-left: 20px;
     font-size: 18px;
     line-height: 40px;
 }
-nav .navRight li:hover a{
+
+nav .navRight li:hover a {
     color: red;
 }
-main section{
+
+main section {
     width: 100%;
     height: 100vh;
 }
-main #page1{
+
+main #page1 {
     background: url("../image/one.jpg") 0 /100% 100% no-repeat;
     position: relative;
 }
 
-main #page1>div{
+main #page1 > div {
     position: absolute;
     width: 100%;
     height: 100px;
-    top: calc(50% - 50px);
+    top: calc(50% - 100px);
     text-align: center;
 }
-main #page1>div h1{
-    width: 80%;
-    margin: 10px auto;
-    animation:hh 2s linear both ;
+
+main #page1 > div h1 {
+    width: 50%;
+    margin: 30px auto;
+    animation: hh 1.5s linear both;
+    font-size: 30px;
 }
+
 @keyframes hh {
-    30%{
-        transform: scale(.8);
+    30% {
+        transform: scale(1.2);
     }
-    60%{
-        transform: scale(1.3);
+    60% {
+        transform: scale(1.5);
     }
-    100%{
-        transform: scale(1);
+    100% {
+        transform: scale(1.2);
     }
 }
-main #page1>div p{
-    line-height: 22px;
+
+main #page1 > div p {
+    line-height: 30px;
+    font-size: 18px;
 }
-main #page2{
+
+main #page2 {
     background: url('../image/two.jpg') 0 /100% 100% no-repeat;
     position: relative;
 }
-main #page2>div{
+
+main #page2 > div {
     position: absolute;
     width: 100%;
     height: 200px;
     top: calc(50% - 100px);
 }
-main #page2>div .introduce{
+main #page2 > div>ul{
     flex: 1;
+}
+main #page2 > div .introduce {
     padding-top: 25px;
 }
-main #page2>div .introduce li{
-    line-height: 50px;
-    width: 100px;
+
+main #page2 > div .introduce li {
+    line-height: 80px;
+    width: 150px;
     margin: 0 auto;
     text-align: center;
     transition: .5s;
 }
-main #page2>div .introduce li:hover span{
-    padding:5px 25px;
-    box-shadow: 0 0 2px  black;
+main #page2 > div .introduce li span.bottomLine{
+    padding-bottom: 5px;
+    border-bottom: 2px solid red;
+}
+main #page2 > div .introduce li:hover span {
+    padding: 5px 25px;
+    box-shadow: 0 0 2px black;
     border-radius: 15px;
     cursor: pointer;
 }
-main #page2>div  .rigthContent{
+main #page2 > div .info{
+    position: relative;
+}
+main #page2 > div .info li{
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    color: #fff;
+    box-shadow: inset 0 0 10px 10px hsla(0,0%,100%,.67);
+    animation: pulse 2s linear infinite;
+    text-align: center;
+    line-height: 80px;
+    position: absolute;
+}
+main #page2 > div .info li:nth-child(2){
+    left: -90px ;
+    top: 90px;
+}
+main #page2 > div .info li:nth-child(3){
+    left: 90px ;
+    top: 90px;
+}
+main #page2 > div .info li:nth-child(4){
+    left:0;
+    top: 180px;
+}
+
+
+main #page2 > div .rigthContent {
     flex: 1;
     text-align: center;
 }
-main #page2>div  .rigthContent li{
-    width: 300px;
-    height: 200px;
-    box-shadow: 0 0 1px  1px  gray;
+
+main #page2 > div .rigthContent li {
+    width: 400px;
+    height: 300px;
+    box-shadow: 0 0 1px 1px gray;
     padding-top: 10px;
 }
-main #page2>div  .rigthContent li p{
-    line-height: 35px;
+
+main #page2 > div .rigthContent li p {
+    line-height: 50px;
 }
-main #page3{
+
+main #page3 {
     background: url('../image/three.jpg') 0 /100% 100% no-repeat;
     position: relative;
-    padding-top: 40px;
+    padding-top: 120px  ;
 }
-main #page3>p{
+
+main #page3 > p {
     line-height: 40px;
+    font-size: 26px ;
     text-align: center;
+    text-shadow: 0 0 3px  darkmagenta;
 }
-main #page3>ul{
-     position: absolute;
-     width: 100%;
-     height: 200px;
-     top: calc(50% - 60px);
 
- }
-main #page3>ul li{
+main #page3 > ul {
+    position: absolute;
+    width: 100%;
+    height: 350px;
+    top: calc(50% - 60px);
+    padding: 0 50px;
+    cursor: pointer;
+}
+main #page3 > ul li {
     width: 15%;
-    border:solid 1px white;
-  border-radius: 15px;
-
+    border: solid 1px white;
+    border-radius: 15px;
+    cursor: pointer;
 }
-main #page3>ul p.mainM{
-    font-size: 30px;
+
+main #page3 > ul p.mainM {
+    font-size: 40px;
     color: white;
     text-align: center;
-    line-height: 200px;
+    line-height: 350px;
     transition: .5s;
 }
-main #page3>ul p.show{
+
+main #page3 > ul p.show {
     color: white;
     padding: 0 10px 0 20px;
-    line-height: 22px;
+    line-height: 26px;
 
 }
+main #page3 > ul p.show:hover{
+    color: orange;
+}
 
-main #page3>ul p.show:before{
+main #page3 > ul p.show:before {
     content: '';
     display: inline-block;
     width: 5px;
@@ -205,9 +278,11 @@ main #page3>ul p.show:before{
     background: white;
     transform: translateX(-5px);
 }
-main #page4{
-        background: url('../image/four.jpg') 0 /100% 100% no-repeat;
+
+main #page4 {
+    background: url('../image/four.jpg') 0 /100% 100% no-repeat;
 }
-main #page5{
+
+main #page5 {
     background: url('../image/five.jpg') 0 /100% 100% no-repeat;
 }
