@@ -3,6 +3,11 @@ let $contents = $('.rigthContent li')
 let bgMusic = $(".bgMusic");
 let $audio = $("audio")[0];
 let musicNum = 0;
+$("nav a").on("click",function () {
+    // $($(this).attr("href")).offset().top 是获取id等于$(this).attr("href")块所在的位置
+    $("html, body").animate({scrollTop: $($(this).attr("href")).offset().top}, 500);
+    return false;//不要这句会有点卡顿
+});
 bgMusic.click(function () {
     musicNum++;
     if (musicNum%2){
